@@ -1,0 +1,78 @@
+/*Este arquivo será afins de comparar meu projeto com o projeto criado de fato com alura*/
+body{
+    background-color: #000;
+    color: #ffffff;
+}
+.sidebar{
+    position: fixed; /*isso significa que este sidebar será fixa na página*/
+    top : 0; /*distância do topo grudado no top*/
+    left: 0; /*distância da esquerda grudado na esquerda*/
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+    
+}
+.sidebar_navigation{
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0px 0px 16px; /*espaçamento do elemento em relação a ele mesmo*/
+}
+.sidebar_navigation .logo{
+    background-color: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0px 0px 16px; 
+}
+
+.sidebar_navigation .logo img{
+    width: 80px;
+}
+
+.sidebar_navigation ul{
+    margin-top: 20px;
+    padding: 0px 20px 10px 20px;
+}
+.sidebar_navigation ul li{
+    padding: 10px 0px;
+}
+.sidebar_navigation ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-style: none;
+    font-family: 'DM Sans', sans-serif;
+}
+.library{
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 10px 0px 10px 0px;
+    background-color: #121212;
+    
+}
+.library nav{
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 20px 10px 0px 20px;
+    text-align: start;
+    display: flex;
+}
+.library span{
+    color: #b3b3b3;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+}
+.library span .fa-book{
+    font-size: 26px;
+}
+.library .text{
+    font-size: 14px;
+    margin: 0px 56px 20px 16px;
+    text-align: start;
+    transform: 2s;
+}
+.library span .fa-plus{
+    margin: 0px 0px 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
