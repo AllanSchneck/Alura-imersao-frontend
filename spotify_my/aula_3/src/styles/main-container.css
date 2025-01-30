@@ -1,0 +1,95 @@
+/*Header*/
+.main-container{
+    max-width: 80vw ; /*80 viewport*/ /*estes valores são responsiveis*/
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+.header__navigation{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #121212;
+}
+
+.header__navigation .navigation{
+    display: flex;
+    justify-content: space-around; /*ele centraliza tudo e coloca os espaços em volta do elemento*/
+    align-items: center;
+}
+
+.header__navigation .navigation .arrow-left{
+    margin-right: 1.25rem; /*rem diferente do pixel ele não é estático unidade relativa*/
+
+
+}
+.arrow-left, .arrow-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: rgba(--bg-arrow-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__login{
+    display: flex;
+    align-items: center;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;   /*espaçamento do elemento em relação a ele mesmo*/
+    background-color: #242424; /*cor de fundo do input*/
+    border-radius: 500px; /*deixa o elemento redondo*/
+    border: 1px solid transparent; /*tira a borda do input*/
+}
+
+.header__search img{
+    width: 16px; /*tamanho do ícone*/
+    height: 16px;   /*tamanho do ícone*/
+    margin-left: 10px; /*espaçamento do ícone em relação a borda do input*/
+}
+
+.header__search input{
+    background-color: transparent; /*tira a cor de fundo do input*/
+    border: none; /*tira a borda do input*/
+    padding: 0px 100px 0px 12px;
+    color: #b3b3b3;  /*cor do texto*/
+    text-overflow: ellipsis; /*s abe quando vocÊ tem um valor de texto muito grande o ellipsis deixa o restante do texto com três pontinhos serve também para não quebrar a linha*/
+    overflow: hidden; /*serve para esconder o texto que não cabe no elemento se colocarmos text-overflow o overflow não irá funcionar*/
+    white-space: nowrap; /*serve para não quebrar a linha*/
+    outline: none; /*tira a borda do input*/
+    font-size: 14px; /*tamanho da fonte*/
+    font-weight: 600; /*negrito*/
+    padding-left: 10px; /*espaçamento do texto em relação a borda do input*/
+}
+
+.header__login .subscribe{
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+}
+
+.header__login .login{
+    width: 100px;
+    height: 48px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+
+}
+

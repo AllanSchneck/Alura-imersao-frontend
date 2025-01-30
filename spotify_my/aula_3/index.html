@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Imersão</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-container.css">
+    <link rel="stylesheet" href="src/styles/main-content.css">
+    <link rel="stylesheet" href="src/styles/playlist.css">
+    <link rel="shortcut icon" href="./src/assets/icons/icons/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bae8a60ad4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar"> <!--CLASSE SIDEBAR conteúdo na parte esquerda da tela  -->
+        <nav class="sidebar_navigation"> <!-- CLASSE CONTENDO NAVEGAÇÃO DO SIDEBAR NA LATERAL ESQUERDA-->
+            <div class="logo"> <!--LOGO SPOTIFY-->
+                <a href=""> 
+                    <img src="./src/assets/icons/icons/logo-spotify.png" alt=""> <!--LOGOTIPO do spotify-->
+                </a>
+            </div>
+            <ul> <!-- LISTA NÃO ORDENADA-->
+                <li> <!-- PRIMEIRO ITEM DA LISTA-->
+                    <a href=""> 
+                        <span class="fa-solid fa-house"></span> <!-- ICONE VIA CDN DO FONT AWESOME -->
+                        <span>Início</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa-solid fa-search"></span>
+                        <span>Buscar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="library"> <!--DIV para biblioteca-->
+            <div class="library__content"> <!--conteudo da biblioteca-->
+                <button class="library__button"> <!--botão biblioteca-->
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua Biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
+            </div>
+            <section class="section-playlist"> <!-- Section a esquerda para criação de playlist-->
+                <div class="section-playlist__content"> <!--conteudo da playlist-->
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar</span>
+                    <button class="section-playlist__button">
+                        <span>Criar Playlist</span>
+                    </button>
+                </div>
+            </section>
+            <div class="cookies"> <!--div para adicionar cookies-->
+                <a href="">Cookies</a>
+            </div>
+            <div class="languages"> <!--div para alterar o idioma-->>
+                <button class="languages__button"> <!--botão para idioma-->
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main> <!-- tag main para organizar o conteudo principal-->
+        <div class="main-container"> <!--container principal-->
+            <nav class="header__navigation"> <!--header navigation do contéudo principal-->
+                <div class="navigation"> <!-- navegação do conteudo principal -->
+                    <button class="arrow-left">  <!--seta para alterar musica-->
+                        <img src="src/assets/icons/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right"><!--seta para alterar musica-->
+                        <img src="src/assets/icons/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                    <div class="header__search"> <!--div para pesquisas-->
+                        <img src="src/assets/icons/icons/search.png" alt="">
+                        <input id="search" type="text" maxlength="800" placeholder="O que você que ouvir?">
+                    </div>
+                    <div class="header__login"> <!--div para login-->
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+            </nav>
+        <div class="main-content"> <!--Conteudo principal-->
+            <div class="main-content__text"> <!--texto do conteudo principal-->
+                <span class="main-content__text-title">Boa tarde</span>
+                <span class="main-content__text-subtitle">Navegar por todas as seções</span>
+            </div>
+            <div class="playlist"> <!--playlist em si aqui será adicionado as musicas e cards relacionados-->
+                <div class="playlist-content"> <!--conteudo da playlist-->
+                    <a href="">
+                        <div class="playlist-card"> <!--playlist card-->
+                                <span>Boas festas</span>
+                                <img src="src/assets/playlist/playlist/1.jpeg" alt="">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="playlist-card" style="background-color: #800AEC;">
+                                <span>Feitos para você</span>
+                                <img src="src/assets/playlist/playlist/2.png" alt="">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="playlist-card" style="background-color: #171E47;">
+                                <span>Lançamentos</span>
+                                <img src="src/assets/playlist/playlist/3.jpeg" alt="">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="playlist-card" style="background-color: brown;">
+                            <span>Creators</span>
+                            <img src="src/assets/playlist/playlist/4.jpeg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="disclaimer-premium"> <!--basicamente o footer da aplicação também conhecido como rodapé  -->
+        <div class="text">
+            <p class="disclaimer-premium__title">TESTAR O PREMIUM DE GRAÇA</p>
+            <p class="disclaimer-premium__subtitle">
+                Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.
+            </p>
+        </div>
+        <div class="button">
+            <button type="button">Inscreva-se grátis</button>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--Desafio criar cards com
+Boa Tarde 
+
+Navegar por todas as seções
+
+e aplicar os cards das playlists
+
+-->

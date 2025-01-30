@@ -1,0 +1,49 @@
+.playlist{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.playlist-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.playlist-content .playlist-card span{
+    text-decoration: none;
+    color: #fff
+}
+
+
+.playlist-content .playlist-card{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    background-color: #22644E;   
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+} 
+
+.playlist-content a{
+    text-decoration: none;
+}
+
+.playlist-card span{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family:var(--font-dm-sans);
+    font-weight: 700;
+    font-size: 42px;
+    text-decoration: none;
+    font-style: none;
+}
+
+.playlist-card img{
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+    transform: rotate(32deg); /*relativo sempre sera conforme a atual div que o elemento esta*/
+    margin-top: 170px;
+    margin-left: 220px;
+}
