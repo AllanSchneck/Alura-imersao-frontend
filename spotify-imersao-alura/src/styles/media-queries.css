@@ -1,0 +1,5 @@
+@media screen and (max-width:1015px){
+    .offer__list-item{
+        grid-template-columns: 1fr 1fr; /*Serve para tratar a responsividade do offer__list-item e evitar que ele passe os limites da tela*/
+    }
+}
